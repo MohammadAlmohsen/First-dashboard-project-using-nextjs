@@ -74,10 +74,15 @@ const menuItem = [
   },
 ];
 const Sidebar = () => {
-  return <div className={styles.container}>
-    <ul>{menuItem.map(cat=>(<li key={cat.titel}>{cat.titel}</li>))}</ul>
-    
-    </div>;
+  return (
+    <div className={styles.container}>
+      <ul>
+        {menuItem.map((cat) => (
+          <li key={cat.titel}>{cat.titel}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Sidebar;
